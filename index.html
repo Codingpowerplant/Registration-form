@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link href="regisform.css" rel="stylesheet" />
+<title>Registration Form</title>
+</head>
+<body>
+<div class="uniname">
+    <p>TRIBHUWAN UNIVERSITY</p>
+</div>
+<div class="title">
+    <p>Application Form</p>
+</div>
+<form method="post" action="https://www.google.com">
+    <fieldset>
+        <label for="name">Name:<input id="name" type="text" name="name" required /></label>
+        <label for="address">Address:<input id="address" type="text" name="address" required /></label>
+        <label for="email">Email:<input id="email" type="email" name="email" /></label>
+        <label for="phnumber">Phone Number:<input id="phnumber" type="text" name="phnumber" required minlength="10" /></label>
+    </fieldset>
+    <fieldset>
+        <p>Faculty:</p>
+        <label for="faculty-science"><input id="faculty-science" type="radio" name="faculty" class="inline" value="Science" /> Science</label>
+        <label for="faculty-management"><input id="faculty-management" type="radio" name="faculty" class="inline" value="Management" /> Management</label>
+        <label for="faculty-humanities"><input id="faculty-humanities" type="radio" name="faculty" class="inline" value="Humanities" /> Humanities</label>
+        <p>More details about <a href="https://www.google.com">the faculties</a></p>
+    </fieldset>
+    <fieldset>
+        <label for="photo">Upload your photo: <input id="photo" type="file" name="photo" /></label>
+        <label for="age">Age: <input id="age" type="number" min="16" max="120" name="age" /></label>
+        <label for="location">Where do you want to study?
+            <select id="location" name="location">
+                <option value="Kathmandu">Kathmandu</option>
+                <option value="Pokhara">Pokhara</option>
+                <option value="Biratnagar">Biratnagar</option>
+                <option value="Chitwan">Chitwan</option>
+            </select>
+        </label>
+        <label for="bio">Bio:<textarea id="bio" rows="3" cols="30" placeholder="Your words..." name="bio"></textarea></label>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
