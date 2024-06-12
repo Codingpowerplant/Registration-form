@@ -1,3 +1,9 @@
+body{
+   background-color: antiquewhite;
+   font-family:'Courier New', Courier, monospace;
+}
+
+
 .uniname{
    text-align: center;
    font-size: 30px;
